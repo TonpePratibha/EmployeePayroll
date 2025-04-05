@@ -1,0 +1,18 @@
+﻿using RepositoryLayer.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ServiceLayer
+{
+    public interface IEmployeeService
+    {
+        List<EmployeeModel> GetAllEmployees();
+        EmployeeModel GetEmployeeById(int id);
+        EmployeeModel AddEmployee(EmployeeModel employeeModel);
+        EmployeeModel UpdateEmployee(int id, EmployeeModel employeeModel);
+        bool DeleteEmployee(int id);
+    }
+}
